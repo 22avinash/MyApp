@@ -33,7 +33,7 @@ app.use('/register',require('./routes/register'));
 var user = require('./models/user');
 
 app.get('/list',function(req,res){
-  user.find(function(err,userlist){
+  user.find({},function(err,userlist){
     res.send(userlist);
   });
 });

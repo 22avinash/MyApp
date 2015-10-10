@@ -1,16 +1,13 @@
 <html>
 <head>
-	<style>
-	body{
-		padding : 50px;
-	}
-
-	</style>
+	<link rel='stylesheet' type="text/css" href="stylesheets/style.css">
+	<script src="js/ux.js"></script>
 	<title>
 	Rgister
 	</title>
 </head>
 <body>
+	<div id='div_form' onmouseover="divmouseover()" onmouseout="divmouseout()">
 	<form action='/register/form' method='post' >
 	<table>
 	<tr colspan=2><td>User details</td></tr>
@@ -21,5 +18,6 @@
 	<tr><td colspan=2><input type='submit' value = 'register'></td></tr>
 	</table>
 	</form>
+	</div>
 </body>
 </html>

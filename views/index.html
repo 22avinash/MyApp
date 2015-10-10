@@ -1,14 +1,29 @@
 <html>
 	<head>
 		<title>Home</title>
-		<style>
-		body{
-			padding : 50px;
-		}
-		</style>
-	</head>
-	<body>
-		<h1>Welcome to MyApp</h1>
-		<p><a href="/register"> Join Us</a></p>
+		<link rel="stylesheet" type='text/css' href="stylesheets/style.css"/>
+		<script src="js/ux.js"></script>
+		</head>
+	<body> 
+		<div id='div_body'>
+		<div id="header">
+			<div id="logo">
+				<h1>Web Store</h1>
+			</div>
+		</div>
+		<div id='div_form' onmouseover="divmouseover()" onmouseout="divmouseout()">
+		<form action='/login' method='post'>
+			<table>
+			<tr>
+			<td><label>Username:</label></td><td><input type='text' required name='uname'></td></br>
+			</tr>
+			<tr>
+			<td><label>Password:</label></td><td><input type='password' required name='pwd'></td><br/>
+			</tr>
+			<tr><td></td><td><label><input type='submit' value='login'> </label><a href="/register"> Join Us</a></td></tr>
+			</table>
+		</form>
+	</div>
+	</div>
 	</body>
 </html>
